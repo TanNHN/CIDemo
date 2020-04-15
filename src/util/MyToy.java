@@ -31,3 +31,19 @@ public class MyToy {
 
     }
 }
+
+//mọi đoạn code bạn viết ra phải cố gắng đảm bảo rằng
+//nó có chất lượng
+//chất lluong75 nghĩa là: hàm trả bề sử lí đúng như mình dự kiến, kì vọng, 
+//expected
+//vd: tính giai thừa() thì ta đưa vào 5, hy vọng nhận về 120
+//vậy ta phải chaun63 bị bộ dữ liệu để test từng hàm, dam03 bảo sử lí đúng
+//từng hàm xử lí, lass sử lí dúng
+//việc đảm bải cho từng class/module/từng đơn thể/từng hàm chạy như
+//dự kiến -> DEV CÓ TRÁCH NHIỆM NÀY, VIỆC NÀY SONG SONG VIÊC CODE
+//QUÁ TRÌNH NÀY GỌI LÀ UNIT TESTING
+///làm sao test hàm () chạy đúng không
+//chuẩn bị data -> đưa data ->gọi hàm -> nhìn kết quả ->so với dự kiến
+//nhìn kết quả: mắt(nhìn con số rta3 ra, so với con số mong đợi,
+//) nhìn bằng màu, số trả ra màu xong -> OK
+//màu đỏ -> không khớp
