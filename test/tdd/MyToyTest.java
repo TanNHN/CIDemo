@@ -28,7 +28,7 @@ public class MyToyTest {
     @Test
     public void testSuccessfulCase() {
         assertEquals(1, cF(0));
-        assertEquals(6, cF(2));
+        assertEquals(2, cF(2));
 
         assertEquals(6, cF(3));
 
