@@ -14,20 +14,23 @@ public class MyToy {
 
     //cF: compute factorial, tinh n giai thua n!= 1.2.3...n
     public static long cF(int n) {
-        if (n < 0 || n > 15) 
-            throw new IllegalArgumentException("n must be between 0 ... 15 ");
-        
+//        if (n < 0 || n > 15) 
+//            throw new IllegalArgumentException("n must be between 0 ... 15 ");
+//        
 
         if (n == 0) 
             return 1;
-        
+        return cF(n-1)*n;
+//  mình phô diễn kĩ thuật tối ưu code = hồi quy
+//  búp bê Nga -> mở con lớn , thấy con nhỏ hơn, mở con nhỏ, ...
+//  đệ quy - recursion - gọi lại chính mình ở quy mô nhỏ hơn
 
-        long product = 1;
-        for (int i = 1; i <= n; i++) {
-            product *= i;
-        }
-        // phan con lai la hop le
-        return product;
+//        long product = 1;
+//        for (int i = 1; i <= n; i++) {
+//            product *= i;
+//        }
+//        // phan con lai la hop le
+//        return product;
 
     }
 }

@@ -21,6 +21,9 @@ public class DemoCI {
         System.out.println("6!= " + MyToy.cF(6));
         System.out.println("0! = " + MyToy.cF(0));//ki vong execption 
         System.out.println("-1! = " + MyToy.cF(-1));//ki vong JVM se giet app
+
+//          stackoverflow.com
+//            MyToy.cF(-5);
     }
 
 }
@@ -28,7 +31,6 @@ public class DemoCI {
 //CODE KHÔNG BỊ LỖI CÚ PHÁP, THAM CHIẾU THƯ VIỆN, LUÔN CLEAN AND BUILD ĐƯỢC
 //TEST DÙNG MẮT, MÀU, CÂU CHUYỆN LOGIC TRONG CODE, CHỨ KO PHẢI LÀ CÂU CHUYỆN CỦA BUILD JAR
 //BUILD HAR, .JAVA -> .CLASS, NÊN .CLASS ->.JAR, .WAR (.RAR)
-
 //NÂNG CAO, NẾU SAI LOGIC, ĐANGĐANG MÀU ĐỎ => ÉO CHA RA .JAR
 
 //JUNIT ĐỀU KẾT HỢP ĐƯỢC VỚI ANT ĐỂ CẤM APP KO DC RA ĐỜI NẾU TESTCASE CÓ MÀY ĐỎ
