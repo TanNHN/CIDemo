@@ -26,26 +26,38 @@ public class MyToyTest {
 //lúc đó netbean ném màu xanh khi ổn, màu đỏ khi có vấn đề
 
     @Test
-    public void testSuccessfulCase() {
+    public void testSuccessfulLower10Cases() {
         assertEquals(1, cF(0));
         assertEquals(2, cF(2));
-
         assertEquals(6, cF(3));
-
         assertEquals(24, cF(4));
         assertEquals(120, cF(5));
         assertEquals(720, cF(6));
-    }//đỏ xảy ra có 2 tình huống
+
+    }
+
+    @Test
+    public void testSuccessfulGreater10Cases() {
+        assertEquals(3_628_800, cF(10));
+        assertEquals(39_916_800, cF(11));
+    }
+
+//đỏ xảy ra có 2 tình huống
     //hoặc bạn xử lí sai, hoặc bạn kì vọng sai
 //            có đó -> kiểm tra code đi
 //ngoại lệ Exception là 1 thứ không phải là value để ước lượng
 //vậy ko thể assert được
 //xài thêm kĩ thuậ bắt ngoại lệ, coingoại lệ giống tình huống mình kì vọng không
-
     @Test(expected = IllegalArgumentException.class)
-    public void testException() {
+    public void testExceptionNegativeCases() {
         cF(-5);
-        cF(100);
+        cF(-100);
+        cF(-1);
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void testExceptionUpperBoundCases() {
+        cF(16);
+        cF(100);
+    }
 }
